@@ -1,39 +1,46 @@
 {
     "categories": {
         "Test 1": {
-            "10": "ten points",
-            "20": "twenty points",
-            "30": "thirty points",
-            "40": "fourty points",
-            "50": "fifty points"
+            "10": { "type": "text", "text": "ten points" },
+            "20": { "type": "text", "text": "twenty points" },
+            "30": { "type": "text", "text": "thirty points" },
+            "40": { "type": "text", "text": "fourty points" },
+            "50": { "type": "image", "img": "https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png?w=1024" }
         },
         "Test 2": {
-            "10": "ten points",
-            "20": "twenty points",
-            "30": "thirty points",
-            "40": "fourty points",
-            "50": "fifty points"
+            "10": { "type": "text", "text": "ten points" },
+            "20": { "type": "text", "text": "twenty points" },
+            "30": { "type": "text", "text": "thirty points" },
+            "40": { "type": "text", "text": "fourty points" },
+            "50": { "type": "text", "text": "fifty points" }
         },
         "Test 3": {
-            "10": "ten points",
-            "20": "twenty points",
-            "30": "thirty points",
-            "40": "fourty points",
-            "50": "fifty points"
+            "10": { "type": "text", "text": "ten points" },
+            "20": { "type": "text", "text": "twenty points" },
+            "30": { "type": "text", "text": "thirty points" },
+            "40": { "type": "text", "text": "fourty points" },
+            "50": { "type": "text", "text": "fifty points" }
         },
         "Test 4": {
-            "10": "ten points",
-            "20": "twenty points",
-            "30": "thirty points",
-            "40": "fourty points",
-            "50": "fifty points"
+            "10": { "type": "text", "text": "ten points" },
+            "20": { "type": "text", "text": "twenty points" },
+            "30": { "type": "text", "text": "thirty points" },
+            "40": { "type": "text", "text": "fourty points" },
+            "50": { "type": "text", "text": "fifty points" }
         },
         "Test 5": {
-            "10": "ten points",
-            "20": "twenty points",
-            "30": "thirty points",
-            "40": "fourty points",
-            "50": "fifty points"
+            "10": { "type": "text", "text": "ten points" },
+            "20": { "type": "text", "text": "twenty points" },
+            "30": { "type": "text", "text": "thirty points" },
+            "40": { "type": "text", "text": "fourty points" },
+            "50": { "type": "text", "text": "fifty points" }
+        },
+        "Test 6": {
+            "10": { "type": "text", "text": "ten points" },
+            "20": { "type": "text", "text": "twenty points" },
+            "30": { "type": "text", "text": "thirty points" },
+            "40": { "type": "text", "text": "fourty points" },
+            "50": { "type": "text", "text": "fifty points" }
         }
     }
 }
