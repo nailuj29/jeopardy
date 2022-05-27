@@ -13,7 +13,7 @@ const Board = () => {
         return (
             <Grid container spacing={0} style={{ width: "100vw", height: "100vh" }}>
                 {Object.keys(categories).map(key => (
-                    <Grid item xs={2} key={key}>
+                    <Grid item xs={3} key={key}>
                         <Card disableElevation style={{ height: "100%" }}>
                             <CardContent>
                                 <Typography variant="h2" style={{ textAlign: "center" }}>
@@ -23,9 +23,9 @@ const Board = () => {
                         </Card>
                     </Grid>
                 ))}
-                {[10, 20, 30, 40, 50].map(i => (
+                {[10, 20, 30, 40].map(i => (
                     Object.keys(categories).map(key => (
-                        <Grid item xs={2} key={key + i}>
+                        <Grid item xs={3} key={key + i}>
                             <Button disableElevation variant="contained" color="success" style={{ 
                                 padding: '15px 100px', 
                                 width: "100%", 
@@ -35,7 +35,7 @@ const Board = () => {
                                 setAnswering(true);
                                 setQuestion([i, key]);
                             }}>
-                                <Typography variant="text">
+                                <Typography variant="h3">
                                     {answered.includes([i, key].toString()) ? "" : i}
                                 </Typography>
                             </Button>
