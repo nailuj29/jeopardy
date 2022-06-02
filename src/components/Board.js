@@ -4,6 +4,7 @@ import { useState } from "react";
 import board from "../boards/test.json"; 
 
 const { categories } = board;
+
 const Board = () => {
     console.log(categories);
     const [answered, setAnswered] = useState([]);
@@ -16,7 +17,9 @@ const Board = () => {
                     <Grid item xs={3} key={key}>
                         <Card disableElevation style={{ height: "100%" }}>
                             <CardContent>
-                                <Typography variant="h2" style={{ textAlign: "center" }}>
+                                <Typography 
+                                    variant={key === "Are you smarter than a 5th grader?" ? "h4" : "h2" } 
+                                    style={{ textAlign: "center" }}>
                                     {key}
                                 </Typography>
                             </CardContent>
@@ -59,10 +62,17 @@ const Board = () => {
                 setAnswered([...answered, question.toString()])
             }}>
                 {questionData.type === "text" ? 
-                    <Typography variant="h1" style={{ textAlign: "center" }}>
+                    <Typography variant="h1" style={{ textAlign: "center", color: "white" }}>
                         {questionData.text}
                     </Typography> :
-                    <img src={questionData.img}/>}
+                    <>
+                        <img src={questionData.img} style={{ maxWith: 100, maxHeight: 200 }}/>
+                        <br />
+                        <Typography variant="h2" style={{ textAlign: "center", color: "white", marginLeft: "20px" }}>
+                            {questionData.text}
+                        </Typography>
+                    </>
+                }
                 
             </Container>
         )
